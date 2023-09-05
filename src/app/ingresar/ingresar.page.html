@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true">
+  <!-- !header  -->
+  <ion-header>
+    <div class="head1">
+    </div>
+    <div class="head2">
+    
+        <div class="label">
+          <ion-label class="yellow">Registr</ion-label>
+          <ion-label class="blue">App</ion-label>
+        </div>
+        <div class="label2">
+          <ion-label class="yellow">Duoc</ion-label>
+          <ion-label class="blue">UC</ion-label>
+          <ion-img src="../../assets/icon/logo2.png"></ion-img>
+        </div>
+  
+    </div>
+    
+    
+  </ion-header>
+  <!-- !Formulario -->
+  <div class="form">
+    <!-- *Input usuario -->
+    <ion-item> 
+      <ion-label class="texto" position="floating">Nombre de Usuario</ion-label>
+      <ion-input [(ngModel)]="valorDelInput" placeholder="Ingresar Usuario"></ion-input>
+    </ion-item>
+    <!-- *Input contraseña -->
+    <ion-item>
+      <ion-label class="texto" position="floating">Contraseña</ion-label>
+      <ion-input type="password" placeholder="Ingresar Contraseña"></ion-input>
+    </ion-item>
+    <!-- *boton ingresar  -->
+    <ion-button id="open-loading" href="home"  shape="round">Ingresar</ion-button>
+    <ion-loading trigger="open-loading" message="Cargando..." [duration]="3000" spinner="circles"></ion-loading>
+    <!-- *link recuperar contraseña -->
+    <a #link href="recuperar">Olvide mi Contraseña</a>
+
+  </div>
+
+  
+  <!-- <ion-footer>hola</ion-footer> -->
+</ion-content>

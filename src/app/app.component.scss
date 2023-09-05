@@ -1,0 +1,11 @@
+.mi-boton {
+    color: inherit; /* Usar el color heredado del padre */
+    background-color: transparent; /* Hacer el fondo transparente */
+    border: none; /* Quitar el borde */
+    text-decoration: none; /* Quitar la decoración de texto */
+    box-shadow: none; /* Quitar la sombra */
+    /* Agregar más estilos personalizados según sea necesario */
+  }
+  ion-tab-bar{
+    height: 100px;
+}
